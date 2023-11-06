@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 25rem;
+    padding: 5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow:  0 0 20px 0 black;
+}
+
+.login-title {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.username,
+.password {
+    text-align: center;
+    border: 2px solid cyan;
+    outline: none;
+    margin: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 15rem;
+    outline: none;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out ;
+}
+
+.username:focus,
+.password:focus {
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+    0% {
+        border-color: green;
+        color: green;
+    }
+    20% {
+        border-color: yellow;
+        color: yellow;
+    }
+    40% {
+        border-color: hotpink;
+        color: hotpink;
+    }
+    60% {
+        border-color: red;
+        color: red;
+    }
+    80% {
+        border-color: purple;
+        color: purple;
+    }
+    100% {
+        border-color: yellow;
+        color: yellow;
+    }
+}
+.btn {
+    background:transparent;
+    border: 2px solid green;
+    border-radius: 50px;
+    padding:1rem 2rem ;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    background:green;
+    border: 2px solid green;
+}
